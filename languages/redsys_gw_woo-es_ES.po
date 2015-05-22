@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Francisco Javier Carazo Gil <carazo@codection.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_ES\n"
+
+#. Text in echo
+#: class-wc-redsys-gateway.php:115
+msgid "Allows RedSys/Servired card payments."
+msgstr "Permitir pagos con tarjetas de crédito RedSys/Servired"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Complete"
+msgstr "Completado"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Description"
+msgstr "Descripción"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Description of the method of payment. Use it to tell the user that it is a secure system through bank."
+msgstr "Descripción del método de pago. Úsalo para decirle al usuario que va a usar un servicio de pago seguro a través de una entidad financiera."
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Enable RedSys/Servired"
+msgstr "Activar RedSys/Servired"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Enable RedSys/Servired test mode."
+msgstr "Activar RedSys/Servired en modo de pruebas."
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Enable/Disable"
+msgstr "Activar/desactivar"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Encryptation Secret Key."
+msgstr "Clave de encriptación secreta"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Owner"
+msgstr "Titular"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "RedSys"
+msgstr "RedSys"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "RedSys/Servired"
+msgstr "RedSys/Servired"
+
+#. Text in echo
+#: class-wc-redsys-gateway.php:112
+msgid "RedSys/Servired Payment"
+msgstr "Pago a través de RedSys/Servired"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "SHA1 - Complete Extended"
+msgstr "Firma SHA1 completa y extendida"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Secret key"
+msgstr "Clave secreta de encriptación"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Secure payment by credit card. You will be redirected to the secure website of the bank."
+msgstr "Pago seguro a través de tarjeta de crédito. Serás redirigido al sitio web del banco de forma segura."
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Sermepa"
+msgstr "Sermepa"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Sort Code"
+msgstr "Código"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Terminal number"
+msgstr "Número de terminal"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Test Mode"
+msgstr "Modo de pruebas"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "This title is showed in checkout process."
+msgstr "Este título se mostrará al finalizar la compra"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Title"
+msgstr "Título"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Trade name"
+msgstr "Nombre del comercio"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Trade number"
+msgstr "Número de comercio"
+
+#. Text in function
+#: class-wc-redsys-gateway.php:1
+msgid "Url"
+msgstr "URL"
+
+msgid "RedSys/Servired order completed, code %s"
+msgstr "Order completada en RedSys/Servired, código %s"
+
+msgid "RedSys/Servired payment error, code %s"
+msgstr "Error en el pago en RedSys/Servired, código %s"
+
+msgid "You must fill out a title for this gateway"
+msgstr "Debe darle un título a esta pasarela"
+
+msgid "You must fill out a description for this gateway"
+msgstr "Debes darle una descripción a esta pasarela"
+
+msgid "You must fill out who is the owner"
+msgstr "Debe rellenar quién es el titular"
+
+msgid "You must fill out the merchant name"
+msgstr "Debe rellenar el nombre del comercio"
+
+msgid "You must fill out the merchant number"
+msgstr "Debe rellenar el número del comercio"
+
+msgid "You must fill out the terminal number. If you don not know it, it probably would be the number: 1"
+msgstr "Debe rellenar el número del terminal. Si no sabes cuál es, probablemente sea el número: 1"
+
+msgid "You must fill out the key"
+msgstr "Debes rellenar el código"

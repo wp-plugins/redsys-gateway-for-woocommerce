@@ -46,5 +46,8 @@ Lea detenidamente las condiciones de la pasarela y aparte, también el correo qu
 
 == Changelog ==
 
+= 0.91 =
+* Arreglados créditos, textos y agregadas imágenes.
+
 = 0.9 =
 * Versión inicial.

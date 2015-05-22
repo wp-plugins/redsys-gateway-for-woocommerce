@@ -1,5 +1,5 @@
 === Woocommerce Servired Light ===
-Contributors: RedSys Gateway for WooCommerce
+Contributors: carazo, hornero
 Donate link: http://www.codection.com/
 Tags: woocommerce, servired, redsys, credit card, martercard, visa, ecommerce
 Requires at least: 3.5

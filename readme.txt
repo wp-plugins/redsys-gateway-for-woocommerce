@@ -1,4 +1,4 @@
-=== Woocommerce Servired Light ===
+=== WooCommerce Servired Light ===
 Contributors: carazo, hornero
 Donate link: http://www.codection.com/
 Tags: woocommerce, servired, redsys, credit card, martercard, visa, ecommerce
@@ -8,7 +8,7 @@ Stable tag: 0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Integración para Woocommerce del sistema de pago por tarjeta Servired.
+Integración para WoocCmmerce del sistema de pago por tarjeta Servired.
 
 == Description ==
 

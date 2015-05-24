@@ -4,7 +4,7 @@ Plugin Name: RedSys Gateway for WooCommerce
 Plugin URI: http://www.codection.com
 Description: This plugins allows to users to include RedSys / Servired / Sermepa in their WooCommerce installations
 Author: codection
-Version: 0.91
+Version: 0.92
 Author URI: https://codection.com
 */
 

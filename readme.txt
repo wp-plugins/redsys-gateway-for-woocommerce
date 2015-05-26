@@ -15,9 +15,9 @@ Integración para WooCommerce del sistema de pago por tarjeta Servired / RedSys 
 Con este plugin podemos usar pasarelas de pago de bancos españoles con WooCommerce. RedSys a día de hoy es el método más usado por la mayor parte de los bancos: Banco Santander, BBVA, La Caixa, ING, etc. El plugin incorpora un formulario de configuración para sólo tener que introducir los datos que nos ofrezcan desde el banco. Este formulario, tiene una validación incorporada para facilitar su uso y minimizar errores.
 
 Algunas características interesantes:
-*	El plugin automáticamente marca el pedido como completado si el pago se realiza de forma satisfactoria.
-*	Preparado para internacionalización
-*	WPML ready
+* El plugin automáticamente marca el pedido como completado si el pago se realiza de forma satisfactoria.
+* Preparado para internacionalización
+* WPML ready
 
 The description of this plugin is in Spanish because of RedSys is a system from Spanish banks. If need anything about it in English, tell us directly at contacto AT codection DOT com.
 
@@ -50,6 +50,7 @@ Lea detenidamente las condiciones de la pasarela y aparte, también el correo qu
 
 = 0.92 =
 * Más arreglos en créditos y textos.
+* Banner modificado
 
 = 0.91 =
 * Arreglados créditos, textos y agregadas imágenes.

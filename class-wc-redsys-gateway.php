@@ -26,7 +26,29 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 
 		add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
 		add_action( 'woocommerce_receipt_redsys', array( $this, 'receipt_page' ) );
-	}	
+		add_action('woocommerce_api_'.strtolower(get_class($this)), array(&$this, 'redsys_ipn_response'));
+	}
+
+	function redsys_ipn_response(){
+		$post_filtered = filter_input_array( INPUT_POST );
+		
+		if ( $post_filtered['Ds_Response'] == '0000' ):
+			$order_id = substr( $post_filtered['Ds_Order'], 0, 8 );		
+			$order = new WC_Order( $order_id );
+			
+			if ( $order->status == 'completed' )
+				exit;
+
+			$order->update_status('completed');		
+			$order->add_order_note( sprintf( __( 'RedSys/Servired order completed, code %s', "redsys_gw_woo" ), $post_filtered['Ds_AuthorisationCode'] ) );
+		else:
+			$order = new WC_Order( $post_filtered['Ds_Order'] );
+
+			$order->update_status('cancelled');
+			
+			$order->add_order_note( sprintf( __( 'RedSys/Servired payment error, code %s', "redsys_gw_woo" ), $post_filtered['Ds_ErrorCode'] ) );	
+		endif;
+	}
 	
 	function init_form_fields() {
 

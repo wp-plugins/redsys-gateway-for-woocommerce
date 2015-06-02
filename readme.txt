@@ -4,10 +4,7 @@ Donate link: http://www.codection.com/
 Tags: woocommerce, servired, redsys, credit card, martercard, visa, ecommerce
 Requires at least: 3.5
 Tested up to: 4.2.2
-<<<<<<< .mine
-Stable tag: 0.93
-=======
-Stable tag: 0.92
+Stable tag: 0.94
 >>>>>>> .r1172518
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -54,6 +51,9 @@ Lea detenidamente las condiciones de la pasarela y aparte, también el correo qu
 == Changelog ==
 
 <<<<<<< .mine
+= 0.94 =
+* Más arreglos de lo anterior
+
 = 0.93 =
 * Recogida de respuesta IPN arreglada
 

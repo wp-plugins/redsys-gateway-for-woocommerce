@@ -4,7 +4,11 @@ Plugin Name: RedSys Gateway for WooCommerce
 Plugin URI: http://www.codection.com
 Description: This plugins allows to users to include RedSys / Servired / Sermepa in their WooCommerce installations
 Author: codection
+<<<<<<< .mine
+Version: 0.93
+=======
 Version: 0.92
+>>>>>>> .r1172518
 Author URI: https://codection.com
 */
 
@@ -19,7 +23,7 @@ function redsys_plugins_loaded() {
 	include_once ('class-wc-redsys-gateway.php');
 	
 	add_filter( 'woocommerce_payment_gateways', 'woocommerce_add_gateway_redsys_gateway' );	
-	add_action( 'woocommerce_api_wc_gateway_redsys', 'redsys_ipn_response' );
+	add_action( 'woocommerce_api_WC_Redsys_Gateway', 'redsys_ipn_response' );
 }
 
 function redsys_ipn_response () {		

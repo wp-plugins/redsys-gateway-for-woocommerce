@@ -144,3 +144,24 @@ msgstr ""
 
 msgid "You must fill out the key"
 msgstr ""
+
+msgid "What to do after payment is done?"
+msgstr ""
+
+msgid "Always pending"
+msgstr ""
+
+msgid "Pending except if all products are downloadable, in this case it would be marked as completed"
+msgstr ""
+
+msgid "Pending except if all products are virtual, in this case it would be marked as completed"
+msgstr ""
+
+msgid "Pending except if all products are downloadable or virtual, in this case it would be marked as completed"
+msgstr ""
+
+msgid "Always completed"
+msgstr ""
+
+msgid "After payment, how the order should be marked?"
+msgstr ""

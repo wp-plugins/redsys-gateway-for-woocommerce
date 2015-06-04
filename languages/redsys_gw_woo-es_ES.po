@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: Francisco Javier Carazo Gil <carazo@codection.com>\n"
+"Last-Translator: Francisco Javier Carazo Gil <carazo@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -158,3 +158,24 @@ msgstr "Debe rellenar el número del terminal. Si no sabes cuál es, probablemen
 
 msgid "You must fill out the key"
 msgstr "Debes rellenar el código"
+
+msgid "What to do after payment is done?"
+msgstr "¿Qué hacer tras la realización del pago?"
+
+msgid "Always processing"
+msgstr "Siempre procesando"
+
+msgid "Pending except if all products are downloadable, in this case it would be marked as completed"
+msgstr "Procesando excepto si todos los productos son descargables, en tal caso será marcada como completada"
+
+msgid "Pending except if all products are virtual, in this case it would be marked as completed"
+msgstr "Procesando excepto si todos los productos son virtuales, en tal caso será marcada como completada"
+
+msgid "Pending except if all products are downloadable or virtual, in this case it would be marked as completed"
+msgstr "Procesando excepto si todos los productos son descargables o virutales, en tal caso será marcada como completada"
+
+msgid "Always completed"
+msgstr "Siempre completada"
+
+msgid "After payment, how the order should be marked?"
+msgstr "Tras realizarse el pago, ¿cómo debería marcarse el pedido?"

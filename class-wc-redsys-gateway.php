@@ -23,10 +23,11 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 		$this->test 			= $this->get_option( 'test' );
 		$this->merchantName 	= $this->get_option( 'merchantName' );
 		$this->owner 			= $this->get_option( 'owner' );
+		$this->after_payment	= $this->get_option( 'after_payment' );
 
 		add_action( 'woocommerce_update_options_payment_gateways_' . $this->id, array( $this, 'process_admin_options' ) );
 		add_action( 'woocommerce_receipt_redsys', array( $this, 'receipt_page' ) );
-		add_action('woocommerce_api_'.strtolower(get_class($this)), array(&$this, 'redsys_ipn_response'));
+		add_action( 'woocommerce_api_' . strtolower( get_class( $this ) ), array( &$this, 'redsys_ipn_response') );
 	}
 
 	function redsys_ipn_response(){
@@ -35,11 +36,76 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 		if ( $post_filtered['Ds_Response'] == '0000' ):
 			$order_id = substr( $post_filtered['Ds_Order'], 0, 8 );		
 			$order = new WC_Order( $order_id );
-			
+
 			if ( $order->status == 'completed' )
 				exit;
 
-			$order->update_status('completed');		
+			$virtual_order = null;
+ 
+			if ( count( $order->get_items() ) > 0 ) {
+				foreach( $order->get_items() as $item ) {
+					if ( 'line_item' == $item['type'] ) {
+						$_product = $order->get_product_from_item( $item );
+
+						if ( ! $_product->is_virtual() ) {
+							$virtual_order = false;
+							break;
+						} else {
+							$virtual_order = true;
+						}	
+					}
+				}
+			}
+
+			$downloadable_order = null;
+ 
+			if ( count( $order->get_items() ) > 0 ) {
+				foreach( $order->get_items() as $item ) {
+					if ( 'line_item' == $item['type'] ) {
+						$_product = $order->get_product_from_item( $item );
+
+						if ( ! $_product->is_virtual() ) {
+							$downloadable_order = false;
+							break;
+						} else {
+							$downloadable_order = true;
+						}	
+					}
+				}
+			}
+
+			// choose between options
+			switch( $this->after_payment ){
+				case "completed":
+					$order->update_status( 'completed' );
+				break;
+
+				case "processing":
+					$order->update_status( 'processing' );
+				break;
+
+				case "completed_downloadable":
+					if( $downloadable_order )
+						$order->update_status( 'completed' );
+					else
+						$order->update_status( 'processing' );
+				break;
+
+				case "completed_virtual":
+					if( $virtual_order )
+						$order->update_status( 'completed' );
+					else
+						$order->update_status( 'processing' );
+				break;
+
+				case "completed_downloadable_virtual":
+					if( $downloadable_order || $virtual_order )
+						$order->update_status( 'completed' );
+					else
+						$order->update_status( 'processing' );
+				break;
+			}
+
 			$order->add_order_note( sprintf( __( 'RedSys/Servired order completed, code %s', "redsys_gw_woo" ), $post_filtered['Ds_AuthorisationCode'] ) );
 		else:
 			$order = new WC_Order( $post_filtered['Ds_Order'] );
@@ -124,21 +190,29 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 						'label' => __( 'Enable RedSys/Servired test mode.', "redsys_gw_woo" ),
 						'default' => 'yes'
 				),
+				'after_payment' => array(
+						'title' => __( 'What to do after payment is done?', "redsys_gw_woo" ),
+						'type'	=> 'select',
+						'options' => array(
+								'processing' => __( 'Always processing', "redsys_gw_woo" ),
+								'completed_downloadable' => __( 'Pending except if all products are downloadable, in this case it would be marked as completed', "redsys_gw_woo" ),
+								'completed_virtual' => __( 'Pending except if all products are virtual, in this case it would be marked as completed', "redsys_gw_woo" ),
+								'completed_downloadable_virtual' => __( 'Pending except if all products are downloadable or virtual, in this case it would be marked as completed', "redsys_gw_woo" ),
+								'completed' => __( 'Always completed', "redsys_gw_woo" )
+						),
+						'description' => __( 'After payment, how the order should be marked?', "redsys_gw_woo" ),
+				),
 		);
-
 	}
 
 	public function admin_options() {
 		?>
-		<h3>
-			<?php _e( 'RedSys/Servired Payment', "redsys_gw_woo" ); ?>
-		</h3>
-		<p>
-			<?php _e('Allows RedSys/Servired card payments.', "redsys_gw_woo" ); ?>
-		</p>
+		<h3><?php _e( 'RedSys/Servired Payment', "redsys_gw_woo" ); ?></h3>
+		<p><?php _e('Allows RedSys/Servired card payments.', "redsys_gw_woo" ); ?></p>
 		<table class="form-table">
 			<?php $this->generate_settings_html(); ?>
 		</table>
+
 
 		<script>
 		jQuery( document ).ready( function( $ ){
@@ -168,9 +242,7 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 					woocommerce_redsys_terminal: "<?php _e( 'You must fill out the terminal number. If you don not know it, it probably would be the number: 1', 'redsys_gw_woo' ); ?>",
 					woocommerce_redsys_key: "<?php _e( 'You must fill out the key', 'redsys_gw_woo' ); ?>"
 				}
-			});
-
-			
+			});			
 		} )
 		</script>
 		<?php

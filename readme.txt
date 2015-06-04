@@ -4,8 +4,7 @@ Donate link: http://www.codection.com/
 Tags: woocommerce, servired, redsys, credit card, martercard, visa, ecommerce
 Requires at least: 3.5
 Tested up to: 4.2.2
-Stable tag: 0.94
->>>>>>> .r1172518
+Stable tag: 1.00
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,7 +49,10 @@ Lea detenidamente las condiciones de la pasarela y aparte, también el correo qu
 
 == Changelog ==
 
-<<<<<<< .mine
+= 1.00 =
+* Saltamos a versión 1.00 por estabilidad del plugin y por nuevas características
+* Se ha introducido la opción de elegir qué hacer con el pedido tras recibir el pago: si marcarlo siempre como procesando, siempre como pagado o marcarlo como procesando o pagado en función a la presencia de productos virtuales y/o descargables
+
 = 0.94 =
 * Más arreglos de lo anterior
 
@@ -64,14 +66,5 @@ Lea detenidamente las condiciones de la pasarela y aparte, también el correo qu
 = 0.91 =
 * Arreglados créditos, textos y agregadas imágenes.
 
-=======
-= 0.92 =
-* Más arreglos en créditos y textos.
-* Banner modificado
-
-= 0.91 =
-* Arreglados créditos, textos y agregadas imágenes.
-
->>>>>>> .r1172518
 = 0.9 =
 * Versión inicial.

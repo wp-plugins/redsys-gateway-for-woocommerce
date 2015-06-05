@@ -182,7 +182,7 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 								'redsys' => __( 'RedSys', "redsys_gw_woo" )
 						),
 						'description' => '',
-						'default' => 'sermepa'
+						'default' => 'redsys'
 				),
 				'test' => array(
 						'title' => __( 'Test Mode', "redsys_gw_woo" ),
@@ -213,6 +213,10 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 			<?php $this->generate_settings_html(); ?>
 		</table>
 
+		<h3><?php _e( 'How it works? (video in Spanish)', "redsys_gw_woo" ); ?></h3>
+		<div id="redsys_video_explicativo" style="width:853px; margin:0 auto;">
+			<iframe width="853" height="480" src="https://www.youtube.com/embed/tFz7m9ls3XU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
 
 		<script>
 		jQuery( document ).ready( function( $ ){

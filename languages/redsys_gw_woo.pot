@@ -165,3 +165,6 @@ msgstr ""
 
 msgid "After payment, how the order should be marked?"
 msgstr ""
+
+msgid "How it works? (video in Spanish)"
+msgstr ""

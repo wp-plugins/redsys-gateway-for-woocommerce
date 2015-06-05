@@ -179,3 +179,6 @@ msgstr "Siempre completada"
 
 msgid "After payment, how the order should be marked?"
 msgstr "Tras realizarse el pago, ¿cómo debería marcarse el pedido?"
+
+msgid "How it works? (video in Spanish)"
+msgstr "¿Cómo funciona? (vídeo en español) "

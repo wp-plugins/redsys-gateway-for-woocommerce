@@ -20,6 +20,8 @@ Algunas características interesantes:
 *   Preparado para internacionalización
 *   WPML ready
 
+Si quieres ver cómo funciona el plugin y cómo se configuran los datos del banco directamente en un vídeo, puedes hacerlo con este vídeo de <a href="https://www.youtube.com/watch?v=tFz7m9ls3XU">Webempresa en YouTube</a>.
+
 The description of this plugin is in Spanish because of RedSys is a system from Spanish banks. If need anything about it in English, tell us directly at contacto AT codection DOT com.
 
 == Installation ==
@@ -36,6 +38,7 @@ Puede instalarlo automáticamente desde Wordpress, o manualmente:
 1. Nos aseguramos en Plugins que este plugin está activado
 2. Nos dirigimos al menú, concretamente a WooCommerce -> Ajustes -> Finalizar compra, arriba veremos RedSys/Servired, hacemos clic sobre ese enlace
 3. Rellenamos el formulario
+Si tienes dudas con la configuración escríbenos a <a href="mailto:contacto@codection.com">contacto@codection.com</a> o mira este vídeo de <a href="https://www.youtube.com/watch?v=tFz7m9ls3XU">Webempresa en YouTube</a>.
 
 = ¿Cómo consigo una pasarela de pago para que mis clientes paguen con tarjeta? =
 Debe hablar este tema directamente con su banco y asegurarse que le ofrecen una pasarela del tipo ReSys o Sermepa o Servired. Una vez contratada la pasarela le enviarán los datos necesarios, los introducierá en el formulario de configuración y el plugin estará listo para funcionar.

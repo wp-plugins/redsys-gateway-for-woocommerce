@@ -22,6 +22,8 @@ Algunas características interesantes:
 
 Si quieres ver cómo funciona el plugin y cómo se configuran los datos del banco directamente en un vídeo, puedes hacerlo con este vídeo de <a href="https://www.youtube.com/watch?v=tFz7m9ls3XU">Webempresa en YouTube</a>.
 
+[youtube https://www.youtube.com/watch?v=tFz7m9ls3XU]
+
 The description of this plugin is in Spanish because of RedSys is a system from Spanish banks. If need anything about it in English, tell us directly at contacto AT codection DOT com.
 
 == Installation ==

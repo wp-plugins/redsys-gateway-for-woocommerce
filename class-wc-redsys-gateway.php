@@ -31,6 +31,8 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 	}
 
 	function redsys_ipn_response(){
+		global $woocommerce;
+
 		$post_filtered = filter_input_array( INPUT_POST );
 		
 		if ( $post_filtered['Ds_Response'] == '0000' ):

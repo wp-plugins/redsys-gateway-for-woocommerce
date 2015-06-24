@@ -106,6 +106,8 @@ class WC_Redsys_Gateway extends WC_Payment_Gateway {
 				break;
 			}
 
+			$order->reduce_order_stock();
+			$woocommerce->cart->empty_cart();
 			$order->add_order_note( sprintf( __( 'RedSys/Servired order completed, code %s', "redsys_gw_woo" ), $post_filtered['Ds_AuthorisationCode'] ) );
 		else:
 			$order = new WC_Order( $post_filtered['Ds_Order'] );

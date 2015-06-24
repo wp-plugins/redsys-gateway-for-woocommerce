@@ -54,6 +54,9 @@ Lea detenidamente las condiciones de la pasarela y aparte, también el correo qu
 
 == Changelog ==
 
+= 1.1 =
+* Tras completar el pago de forma exitosa ahora se hacen dos acciones más: se actualiza el stock y se vacía el carrito de la compra
+
 = 1.0.1 =
 * Añadimos vídeo de funcionamiento del plugin gracias a Webempresa
 * RedSys ahora es el tipo de pasarela por defecto

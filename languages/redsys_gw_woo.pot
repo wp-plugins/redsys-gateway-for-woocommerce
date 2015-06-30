@@ -1,170 +1,204 @@
-#. Text in echo
-#: class-wc-redsys-gateway.php:115
-msgid "Allows RedSys/Servired card payments."
+msgid ""
 msgstr ""
 
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Complete"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Description"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Description of the method of payment. Use it to tell the user that it is a secure system through bank."
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Enable RedSys/Servired"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Enable RedSys/Servired test mode."
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Enable/Disable"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Encryptation Secret Key."
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Owner"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "RedSys"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
+#: class-wc-redsys-gateway.php:10 class-wc-redsys-gateway.php:136
 msgid "RedSys/Servired"
 msgstr ""
 
-#. Text in echo
-#: class-wc-redsys-gateway.php:112
-msgid "RedSys/Servired Payment"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "SHA1 - Complete Extended"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Secret key"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Secure payment by credit card. You will be redirected to the secure website of the bank."
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Sermepa"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Sort Code"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Terminal number"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Test Mode"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "This  title is showed in checkout process."
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Title"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Trade name"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Trade number"
-msgstr ""
-
-#. Text in function
-#: class-wc-redsys-gateway.php:1
-msgid "Url"
-msgstr ""
- 
+#: class-wc-redsys-gateway.php:113
+#, php-format
 msgid "RedSys/Servired order completed, code %s"
 msgstr ""
 
+#: class-wc-redsys-gateway.php:119
+#, php-format
 msgid "RedSys/Servired payment error, code %s"
 msgstr ""
 
-msgid "You must fill out a title for this gateway"
+#: class-wc-redsys-gateway.php:127
+msgid "Enable/Disable"
 msgstr ""
 
-msgid "You must fill out a description for this gateway"
+#: class-wc-redsys-gateway.php:129
+msgid "Enable RedSys/Servired"
 msgstr ""
 
-msgid "You must fill out who is the owner"
+#: class-wc-redsys-gateway.php:133
+msgid "Title"
 msgstr ""
 
-msgid "You must fill out the merchant name"
+#: class-wc-redsys-gateway.php:135
+msgid "This title is showed in checkout process."
 msgstr ""
 
-msgid "You must fill out the merchant number"
+#: class-wc-redsys-gateway.php:140
+msgid "Description"
 msgstr ""
 
-msgid "You must fill out the terminal number. If you don not know it, it probably would be the number: 1"
+#: class-wc-redsys-gateway.php:142
+msgid ""
+"Description of the method of payment. Use it to tell the user that it is a "
+"secure system through bank."
 msgstr ""
 
-msgid "You must fill out the key"
+#: class-wc-redsys-gateway.php:143
+msgid ""
+"Secure payment by credit card. You will be redirected to the secure website "
+"of the bank."
 msgstr ""
 
+#: class-wc-redsys-gateway.php:146
+msgid "Owner"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:151
+msgid "Trade name"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:156
+msgid "Trade number"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:161
+msgid "Terminal number"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:166
+msgid "Secret key"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:168
+msgid "Encryptation Secret Key."
+msgstr ""
+
+#: class-wc-redsys-gateway.php:172
+msgid "Sort Code"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:175
+msgid "Complete"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:176
+msgid "SHA1 - Complete Extended"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:182
+msgid "Url"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:185
+msgid "Sermepa"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:186
+msgid "RedSys"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:192
+msgid "Test Mode"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:194
+msgid "Enable RedSys/Servired test mode."
+msgstr ""
+
+#: class-wc-redsys-gateway.php:198
 msgid "What to do after payment is done?"
 msgstr ""
 
-msgid "Always pending"
+#: class-wc-redsys-gateway.php:201
+msgid "Always processing"
 msgstr ""
 
-msgid "Pending except if all products are downloadable, in this case it would be marked as completed"
+#: class-wc-redsys-gateway.php:202
+msgid ""
+"Pending except if all products are downloadable, in this case it would be "
+"marked as completed"
 msgstr ""
 
-msgid "Pending except if all products are virtual, in this case it would be marked as completed"
+#: class-wc-redsys-gateway.php:203
+msgid ""
+"Pending except if all products are virtual, in this case it would be marked "
+"as completed"
 msgstr ""
 
-msgid "Pending except if all products are downloadable or virtual, in this case it would be marked as completed"
+#: class-wc-redsys-gateway.php:204
+msgid ""
+"Pending except if all products are downloadable or virtual, in this case it "
+"would be marked as completed"
 msgstr ""
 
+#: class-wc-redsys-gateway.php:205
 msgid "Always completed"
 msgstr ""
 
+#: class-wc-redsys-gateway.php:207
 msgid "After payment, how the order should be marked?"
 msgstr ""
 
+#: class-wc-redsys-gateway.php:214
+msgid "RedSys/Servired Payment"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:215
+msgid "Allows RedSys/Servired card payments."
+msgstr ""
+
+#: class-wc-redsys-gateway.php:220
 msgid "How it works? (video in Spanish)"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:245
+msgid "You must fill out a title for this gateway"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:246
+msgid "You must fill out a description for this gateway"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:247
+msgid "You must fill out who is the owner"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:248
+msgid "You must fill out the merchant name"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:249
+msgid "You must fill out the merchant number"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:250
+msgid ""
+"You must fill out the terminal number. If you don not know it, it probably "
+"would be the number: 1"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:251
+msgid "You must fill out the key"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:260
+msgid ""
+"Thank you for your order, click on the button to pay with RedSys/Servired."
+msgstr ""
+
+#: class-wc-redsys-gateway.php:291
+msgid ""
+"Thank you for your order. We are now redirecting you to Redsys/Servired to "
+"make payment."
+msgstr ""
+
+#: class-wc-redsys-gateway.php:312
+msgid "Pay via Redsys/Servired"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:312
+msgid "Cancel order &amp; restore cart"
+msgstr ""
+
+#: class-wc-redsys-gateway.php:355
+#, php-format
+msgid "Order %s"
 msgstr ""
